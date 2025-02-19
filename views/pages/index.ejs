@@ -1,0 +1,18 @@
+<div class="container">
+    <h2>Recent Posts</h2>
+    
+    <div class="posts-grid">
+        <% if (posts && posts.length > 0) { %>
+            <% posts.forEach(post => { %>
+                <div class="post-card">
+                    <img src="<%= post.imageUrl %>" alt="<%= post.title %>">
+                    <div class="post-info">
+                        <p class="tags"><%= post.tags.join(', ') %></p>
+                    </div>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <p>No posts found</p>
+        <% } %>
+    </div>
+</div>
