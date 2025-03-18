@@ -1,0 +1,16 @@
+header {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+}
+
+nav {
+    align-items: center;
+    margin: 0 auto;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}

@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="posts-grid">
+        <% if (posts && posts.length > 0) { %>
+            <% posts.forEach(post => { %>
+                <img src="<%= post.url %>" alt="<%= post.title %>">
+            <% }) %>
+        <% } else { %>
+            <p>No posts found</p>
+        <% } %>
+    </div>
+</div>
