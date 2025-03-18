@@ -10,9 +10,7 @@
     <%- include('../partials/header') %>
 
     <main>
-        <%- content %>
+        <%- include(`../${content}`, {}) %>
     </main>
-
-    <%- include('../partials/footer') %>
 </body>
 </html>
